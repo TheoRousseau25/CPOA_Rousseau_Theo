@@ -6,20 +6,20 @@ import fr.iut.td1.miscs.Observable;
 public class UIPhoneGraphe implements IObserver {
 
 <<<<<<< HEAD
-	private int num1;
+
 =======
 	private int num;
 	
 >>>>>>> branch 'master' of https://github.com/TheoRousseau25/CPOA_Rousseau_Theo.git
 
 	public int getNum() {
-		return num1;
+		return num;
 	}
 	
 
 	public UIPhoneGraphe(int num) {
 		System.out.println("Je suis un écran de type IPhone");
-		this.num1 = num;
+		this.num = num;
 	}
 
 	@Override
