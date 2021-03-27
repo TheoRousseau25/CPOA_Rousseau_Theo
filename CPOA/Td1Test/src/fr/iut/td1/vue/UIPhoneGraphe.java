@@ -5,11 +5,18 @@ import fr.iut.td1.miscs.Observable;
 
 public class UIPhoneGraphe implements IObserver {
 
+<<<<<<< HEAD
 	private int num1;
+=======
+	private int num;
+	private string libelle;
+	
+>>>>>>> branch 'master' of https://github.com/TheoRousseau25/CPOA_Rousseau_Theo.git
 
 	public int getNum() {
 		return num1;
 	}
+	
 
 	public UIPhoneGraphe(int num) {
 		System.out.println("Je suis un écran de type IPhone");
