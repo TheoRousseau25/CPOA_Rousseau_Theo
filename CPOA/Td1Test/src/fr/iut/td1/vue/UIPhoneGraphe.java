@@ -6,10 +6,13 @@ import fr.iut.td1.miscs.Observable;
 public class UIPhoneGraphe implements IObserver {
 
 	private int num;
+	private string libelle;
+	
 
 	public int getNum() {
 		return num;
 	}
+	
 
 	public UIPhoneGraphe(int num) {
 		System.out.println("Je suis un écran de type IPhone");
