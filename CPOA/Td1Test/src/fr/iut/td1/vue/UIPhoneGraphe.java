@@ -5,19 +5,19 @@ import fr.iut.td1.miscs.Observable;
 
 public class UIPhoneGraphe implements IObserver {
 
-	private int num;
+	private int num1;
 
 	public int getNum() {
-		return num;
+		return num1;
 	}
 
 	public UIPhoneGraphe(int num) {
 		System.out.println("Je suis un écran de type IPhone");
-		this.num = num;
+		this.num1 = num;
 	}
 
 	@Override
 	public void update(Observable obj) {
-		System.out.println("dans methode update de IPhone N° " + num);
+		System.out.println("dans methode update de IPhone N° " + num1);
 	}
 }
