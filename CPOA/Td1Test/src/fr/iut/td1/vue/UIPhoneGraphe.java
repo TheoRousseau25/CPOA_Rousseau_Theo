@@ -9,7 +9,6 @@ public class UIPhoneGraphe implements IObserver {
 	private int num1;
 =======
 	private int num;
-	private string libelle;
 	
 >>>>>>> branch 'master' of https://github.com/TheoRousseau25/CPOA_Rousseau_Theo.git
 
