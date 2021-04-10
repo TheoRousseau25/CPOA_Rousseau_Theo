@@ -18,21 +18,45 @@ public class MathsTest {
 	}
 
 	@Test
-	public void testAdditionCasGeneralNombrePositif() {
+	public void testAdditionCasGeneralNombresPositifs() {
 		Assert.assertEquals(maths.addition(2, 3), 5);
+	}
+	
+	@Test
+	public void testAdditionCasGeneralNombresNegatifs() {
+		Assert.assertEquals(maths.addition(-2, -3), -5);
+	}
+	
+	@Test
+	public void testAdditionCasGeneralNombresMixtes() {
+		Assert.assertEquals(maths.addition(2, -3), -1);
+	}
+	
+	
+	@Test
+	public void testSoustractionCasGeneralNombresPositifs() {
+		Assert.assertEquals(maths.soustraction(2, 3), -1);
 	}
 
 	@Test
-	public void testSoustractionCasGeneralNombreNegatif() {
-		Assert.assertEquals(maths.soustraction(2, 3), -1);
+	public void testSoustractionCasGeneralNombreNegatifs() {
+		Assert.assertEquals(maths.soustraction(-2, -3), 1);
+	}
+	
+	@Test
+	public void testSoustractionCasGeneralNombreMixtes() {
+		Assert.assertEquals(maths.soustraction(-2, -3), 1);
 	}
 	
 	@Test
 	public void testMultiplicationCasGeneralNombrePositif() {
 		Assert.assertEquals(maths.multiplication(2, 3), 6);
 	}
-
 	
+	@Test
+	public void testMultiplicationCasGeneralNombreNegatif() {
+		Assert.assertEquals(maths.multiplication(-2, -3), -6);
+	}
 
 	@Test
 	public void testDivisionCasGeneralNombreEntier() throws MathsExceptions {

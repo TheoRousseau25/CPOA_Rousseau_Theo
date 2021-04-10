@@ -19,12 +19,14 @@ public class Maths implements IMaths {
 
 	@Override
 	public int multiplication(int a, int b) {
+		int result = 0;
 		
-		for (int i = 0; i<b; i++) {
-		    a+=a;
+		for (int i = 0; i < b; i++) {
+			System.out.println(result);
+		    result = addition(result, a);
 		}
 		
-		return a;
+		return result;
 	}
 	
 
