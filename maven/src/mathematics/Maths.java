@@ -21,10 +21,24 @@ public class Maths implements IMaths {
 	public int multiplication(int a, int b) {
 		int result = 0;
 		
-		for (int i = 0; i < b; i++) {
-			System.out.println(result);
-		    result = addition(result, a);
+		if (b<0) {
+			
+			for (int i = 0; i < b*-1; i++) {
+			    result = addition(result, a);
+			
+		    }
+			
+			return result *= -1;
 		}
+		
+		
+		else {
+			for (int i = 0; i < b; i++) {
+		
+		    result = addition(result, a);
+		    }
+		}
+        
 		
 		return result;
 	}
@@ -43,3 +57,4 @@ public class Maths implements IMaths {
 	    }
 }
 	}
+
