@@ -49,18 +49,33 @@ public class MathsTest {
 	}
 	
 	@Test
-	public void testMultiplicationCasGeneralNombrePositif() {
+	public void testMultiplicationCasGeneralNombresPositifs() {
 		Assert.assertEquals(maths.multiplication(2, 3), 6);
 	}
 	
 	@Test
-	public void testMultiplicationCasGeneralNombreNegatif() {
-		Assert.assertEquals(maths.multiplication(-2, -3), -6);
+	public void testMultiplicationCasGeneralNombresNegatifs() {
+		Assert.assertEquals(maths.multiplication(-2, -3), 6);
+	}
+	
+	@Test
+	public void testMultiplicationCasGeneralNombresMixtes() {
+		Assert.assertEquals(maths.multiplication(2, -3), -6);
 	}
 
 	@Test
-	public void testDivisionCasGeneralNombreEntier() throws MathsExceptions {
+	public void testDivisionCasGeneralNombresEntiersPositifs() throws MathsExceptions {
 		Assert.assertEquals(maths.multiplication(2, 3), 6);
+	}
+	
+	@Test
+	public void testDivisionCasGeneralNombresEntiersNegatifs() throws MathsExceptions {
+		Assert.assertEquals(maths.multiplication(-2, -3), 6);
+	}
+	
+	@Test
+	public void testDivisionCasGeneralNombresEntiersNegatifs() throws MathsExceptions {
+		Assert.assertEquals(maths.multiplication(2, -3), -6);
 	}
 
 	@Test
@@ -80,3 +95,4 @@ public class MathsTest {
 	}
 
 }
+
