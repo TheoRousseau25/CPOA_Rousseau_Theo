@@ -65,17 +65,17 @@ public class MathsTest {
 
 	@Test
 	public void testDivisionCasGeneralNombresEntiersPositifs() throws MathsExceptions {
-		Assert.assertEquals(maths.multiplication(2, 3), 6);
+		Assert.assertEquals(maths.division(2, 3), 6);
 	}
 	
 	@Test
 	public void testDivisionCasGeneralNombresEntiersNegatifs() throws MathsExceptions {
-		Assert.assertEquals(maths.multiplication(-2, -3), 6);
+		Assert.assertEquals(maths.division(-2, -3), 6);
 	}
 	
 	@Test
 	public void testDivisionCasGeneralNombresEntiersNegatifs() throws MathsExceptions {
-		Assert.assertEquals(maths.multiplication(2, -3), -6);
+		Assert.assertEquals(maths.division(2, -3), -6);
 	}
 
 	@Test
@@ -95,4 +95,5 @@ public class MathsTest {
 	}
 
 }
+
 
